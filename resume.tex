@@ -1,0 +1,249 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{times} % Font Package
+\usepackage[top=0.5in, bottom=0.5in, left=0.35in, right=0.65in]{geometry}
+\usepackage{graphicx} %Use of photos
+\usepackage{multicol}
+
+\usepackage{array}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc} % input encoding
+
+\usepackage{nopageno}
+
+\setlength{\tabcolsep}{0in}
+\newcommand{\isep}{-2 pt}
+\newcommand{\lsep}{-0.5cm}
+\newcommand{\psep}{-0.6cm}
+\newcommand{\spsep}{-0.75cm}
+
+\newcommand{\tfspace}{\hspace{4.5mm}}
+
+\newcommand{\resheading}[1]{{\large {\begin{minipage}{1\textwidth}{\uppercase{ \textbf{#1}}}\end{minipage}}}}
+
+\renewcommand{\labelitemii}{$\circ$}
+%\newcommand{\resheading}[1]{{\Large {\begin{minipage}{0.975\textwidth}{\scshape{\textbf{#1 \vphantom{p\^{E}}}}}\end{minipage}}}}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=cyan,
+    filecolor=magenta,      
+    urlcolor=blue,
+}
+
+
+\begin{document}
+
+%Personal Details and Institute logo
+\begin{minipage}{0.70\linewidth}
+\LARGE \uppercase {\textbf{K Jithendra | EE18M087}}\\
+\Large \uppercase{{Indian Institute of Technology, Madras}}\\\\
+\Large \uppercase{{Registration Number:  	33/EE/20/087}}\\
+\end{minipage}
+\begin{minipage}{0.25\linewidth}
+\hfill
+\includegraphics[width=27mm]{logo.png}
+\end{minipage}\\
+
+\resheading{\textbf{Education} }\\[\lsep]
+\setlength{\unitlength}{5cm}
+\put(0.11,-0.04){\line(1,0){3.6}}\\[-0.6cm]
+\begin{table}[h!]
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{llll}
+%\setlength{\unitlength}{5cm}
+%\put(0.11,0.1){\line(1,0){3.6}}\\[-0.6cm] 
+\tfspace\textbf{Program} & \textbf{Institution} & \textbf{CGPA/\%}           & \textbf{Completion Year}  \\ 
+\setlength{\unitlength}{5cm}
+\put(0.11,0.1){\line(1,0){3.6}}\\[-0.45cm] 
+\tfspace M.Tech. (Microelectronics and VLSI Design)  & IIT Madras  & 8.0 & 2020 \\\\[-0.4cm]
+\tfspace B.Tech. (Electronics and Comm. Engg.) & NIT Puducherry & 8.64 & 2017\hfill\href{https://drive.google.com/open?id=16uKViPtG86cIPJEGeQbD6EgbcdTeOfS5}{proof} \\\\[-0.4cm]
+\tfspace Intermediate & Sri Vidya Vikas Jr. College Chittoor & 97.7 & 2013\hfill\href{https://drive.google.com/open?id=1H4QQS387FQZuorGD0aFG_xx8_JYNdQMa}{proof} \\\\[-0.4cm]
+\tfspace SSC & Jawahar Navodaya Vidyalaya Chittoor & 8.4 & 2011\hfill\href{https://drive.google.com/open?id=1jzxfyWZxIyt15NqbJQvFcFQ0QNAk1Vw6}{proof} \\\\ [-0.4cm]
+\setlength{\unitlength}{5cm}
+\put(0.11,0.1){\line(1,0){3.6}}\\[-0.75cm]
+\end{tabular}
+\end{table}
+
+\resheading{\textbf{Scholastic Achievements} }\\[\lsep]
+\setlength{\unitlength}{5cm}
+\put(0.11,-0.04){\line(1,0){3.6}}\\[-0.6cm] 
+\begin{itemize}\itemsep \isep
+	\item Secured All India Rank of 347 in Gate 2018 - Electronics and Communication Engineering.\hfill\href{https://drive.google.com/open?id=1-7pXIO3lo86ylEHVMioVYz8Y0M4WyhGc}{proof}
+	\item Participated in national round of INDO-US Robo League 2015 in Line Following event, conducted by Technophilia Systems and Robotics \& Computer Applications Institute of USA, held at IIT Bombay during AAVRITI 2015.\href{https://drive.google.com/open?id=1U9n5X5sfy2GxV4BA4h3lGMNs0-PgJptl}{proof}
+	\item Recipient of Central Sector Scheme of Scholarship for College and University students for the year 2013-14 and received the scholarship for 4 consecutive years from 2013 to 2017.\hfill\href{https://drive.google.com/open?id=1xDrgfhp5ky41YVzyX2L9x9v78SXX_UCi}{proof}
+	\item Secured All India Rank of 14475 in JEE-MAIN 2013.\hfill\href{https://drive.google.com/open?id=1XkCOMKXUVsj6trmd7Jo150ccDQM2EcNO}{proof}
+	\item Secured rank of 2724 in EAMCET 2013.\hfill\href{https://drive.google.com/open?id=1-zmyxcwx36_AIHJlxUvnrv8LXG7gdgbJ}{proof}
+\end{itemize}
+
+
+\resheading{\textbf{Key Projects} }\\[\lsep]
+\setlength{\unitlength}{5cm}
+\put(0.11,-0.04){\line(1,0){3.6}}\\[-0.6cm]
+\begin{itemize}
+	\item \textbf{Indigenous 5G Testbed Project \hfill May 2019 - Present} \\
+	\emph{M. Tech Project  \hfill C++, Verilog, Vivado, Vivado HLS, MATLAB} \\[\spsep]
+	\begin{itemize} \itemsep \isep
+		\item Design and implementation of 5G technologies for wireless systems and networks on integrated multi-core programmable SoCs for maximal performance. 
+		\item Designed and Implemented Channel Decoder module for the Uplink Receiver on Xilinx Zynq UltraScale+ RFSoC.
+	\end{itemize}
+	 
+	 \item \textbf{Hardware accelerator for Handwritten digit recognition using MNIST database \hfill January - May 2019} \\
+	\emph{Mapping Signal Processing Algorithms to DSP Architectures  \hfill C++, Vivado, Vivado HLS} \\[\spsep]
+	\begin{itemize} \itemsep \isep
+	\item Implemented hardware accelerator for trained feed forward neural network model from KANN library on Xilinx Zynq-7000 SoC, to speed up the classification of handwritten digit images from MNIST database.
+%		\item Implemented a hardware accelerator to speed up the classification of the handwritten digit images from MNIST dataset.
+%		\item Already trained multi layer perceptron feed forward neural network model from KANN Library is used to classify the images. This model consists of two fully connected layers and two non linearity layers.
+		\item Achieved a speed improvement by a factor of (1.8).
+	\end{itemize}
+	
+	\item \textbf{In memory compute engine for Handwritten digit recognition using MNIST database  \hfill January - May 2019} \\
+	\emph{Advanced Topics in VLSI \hfill  Electric, LTSpice, MATLAB} \\[\spsep]
+	\begin{itemize} \itemsep \isep
+		\item Designed 4$\times$2 array of 8T SRAM Cells and associated peripheral circuitry that computes multiply and accumulate(MAC) operations for fully connected layer of trained neural network model from KANN library.
+%		\item Stored the weights into the cells of the array. In compute operation, the array computes the MAC operation between input data and stored weights, then sends the result through the data bus.
+
+	\end{itemize}
+	
+	\item \textbf{8 bit carry save multiplier with single stage pipeline \hfill July - November 2018} \\
+	\emph{Digital IC Design \hfill  Electric, LTSpice} \\[\spsep]
+	\begin{itemize} \itemsep \isep
+		\item Designed schematic and layout of signed 8 bit carry save multiplier and then RC extracted netlist of Layout is used for simulations.
+		\item Achieved 93\% improvement in the maximum frequency of operation of the pipelined multiplier when compared with the unpipelined multiplier.
+%		\item Designed an 8 bit Carry save multiplier in transistor level schematic and layout of the same in 22nm CMOS technology, to increase the maximum frequency of operation and throughput.
+%		\item Achieved a 64\% improvement in the maximum frequency of operation of the pipelined multiplier when compared with the unpipelined multiplier.
+%		\item The use of Carry look ahead adder instead of ripple carry adder in the unpipelined multiplier design improved the maximum frequency of operation by 34\%.
+	\end{itemize}
+	
+	\item \textbf{Performance evaluation and implementation of SVM Classifier for speech emotion recognition using Berlin database \hfill January - April 2017}\href{https://drive.google.com/open?id=1P0t_L0kyVUBKDL7uhDdbQtKr7fGCYVyx}{proof} \\
+	\emph{B. Tech Project  \hfill  MATLAB} \\[\spsep]
+	\begin{itemize} \itemsep \isep
+		\item Trained SVM classifier using training data of 4-dimensional feature vectors. The resultant hyperplane was used as a decision boundary to classify the test data.%that separates the trainining data to a maximum possible extent.
+		\item Achieved an average classification accuracy of 72.04\%.
+	\end{itemize}
+	
+%	\item \textbf{Web application for a bank  \hfill October 2017} \href{https://drive.google.com/open?id=1ZRu8wlOeMdFBvuiVRCePeMOVpA8j3WAv}{proof} \\
+%	\emph{Full Stack Web Development Training.\hfill Java, Spring MVC 4.0} \\[\spsep]
+%	\begin{itemize} \itemsep \isep
+%		\item Developed a bank web application that can be used by bank employees to carryout transactions \& process customer needs and by customers to use internet banking facilities.
+%	\end{itemize}
+\end{itemize}
+\pagebreak
+
+\resheading{\textbf{Professional Experience} }\\[\lsep]
+\setlength{\unitlength}{5cm}
+\put(0.11,-0.04){\line(1,0){3.6}}\\[-0.6cm]
+\begin{itemize}
+	\item Worked as Associate Software Engineer in Mphasis Pvt. Ltd. \hfill \emph{July 2018 - July 2019} \href{https://drive.google.com/open?id=1ZRu8wlOeMdFBvuiVRCePeMOVpA8j3WAv}{proof} \\[\spsep]
+		\begin{itemize} \itemsep \isep
+		\item Worked as a team member in a project to fix vulnerabilities present in Centive, an Incentive Application based on Java Applets.
+%		\item Proposed solutions were accepted by the higher members of the team and the development environment was set up.
+		\item Developed a bank web application that can be used by bank employees to carryout transactions \& process customer needs and by customers to use internet banking facilities, as a part of full stack web development training in Java programming language.
+		\end{itemize}
+\end{itemize}
+
+
+\resheading{\textbf{Course Work}}\\[\lsep]
+\setlength{\unitlength}{5cm}
+\put(0.11,-0.04){\line(1,0){3.6}}\\[-0.6cm]
+\\\\[-0.1cm]
+\begin{minipage}[t]{10cm}
+	\begin{itemize}\itemsep \isep
+		\item Mapping signal processing algorithms to DSP architectures
+		\item Digital IC design
+		\item Computer architecture 
+		\item Digital system testing and testable design
+		\item Advanced topics in VLSI	
+\end{itemize}
+\end{minipage}
+\begin{minipage}[t]{8cm}
+	\begin{itemize}\itemsep \isep
+		\item Pattern recognition\hfill\href{https://drive.google.com/open?id=16uKViPtG86cIPJEGeQbD6EgbcdTeOfS5}{proof}
+		\item Networks and protocols\hfill\href{https://drive.google.com/open?id=16uKViPtG86cIPJEGeQbD6EgbcdTeOfS5}{proof}
+		\item VLSI technology
+		\item Semiconductor device modelling
+		\item Microprocessors and microcontrollers\hfill\href{https://drive.google.com/open?id=16uKViPtG86cIPJEGeQbD6EgbcdTeOfS5}{proof}		
+\end{itemize}
+\end{minipage}\\\\[-0.3cm]
+
+
+
+\resheading{\textbf{Laboratories}}\\[\lsep]
+\setlength{\unitlength}{5cm}
+\put(0.11,-0.04){\line(1,0){3.6}}\\[-0.6cm]
+\\\\[-0.1cm]
+\begin{minipage}[t]{10cm}
+	\begin{itemize}\itemsep \isep
+		\item VLSI design laboratory\hfill\href{https://drive.google.com/open?id=16uKViPtG86cIPJEGeQbD6EgbcdTeOfS5}{proof}
+		\item Microprocessors and microcontrollers laboratory\hfill\href{https://drive.google.com/open?id=16uKViPtG86cIPJEGeQbD6EgbcdTeOfS5}{proof}
+\end{itemize}
+\end{minipage}
+\begin{minipage}[t]{8cm}
+	\begin{itemize}\itemsep \isep
+		\item Electronic circuits laboratory\hfill\href{https://drive.google.com/open?id=16uKViPtG86cIPJEGeQbD6EgbcdTeOfS5}{proof} 
+		\item Digital Electronics laboratory\hfill\href{https://drive.google.com/open?id=16uKViPtG86cIPJEGeQbD6EgbcdTeOfS5}{proof}		
+\end{itemize}
+\end{minipage}\\\\[-0.3cm]
+
+\resheading{\textbf{Technical Skills}}\\[\lsep]
+\setlength{\unitlength}{5cm}
+\put(0.11,-0.04){\line(1,0){3.6}}\\[-0.6cm]
+\begin{itemize} \itemsep \isep
+  \item \textbf{Programming languages} : C, C++, Java. \\[-0.55cm]
+  \item \textbf{HDL}\hspace{33mm}: Verilog. \\[-0.55cm].
+
+  \item \textbf{Software packages}\hspace{11mm}: Vivado, Vivado HLS, LTSpice, Electric, Eclipse, MATLAB.
+\end{itemize}
+
+\resheading{\textbf{Positions of Responsibility}}\\[\lsep]
+\setlength{\unitlength}{5cm}
+\put(0.11,-0.04){\line(1,0){3.6}}\\[-0.6cm]
+\begin{itemize} \itemsep  \isep
+	\item Teaching assistant - Computer organization course \hfill \emph{August - November 2019} \\[\spsep]
+	\begin{itemize} \itemsep \isep
+		\item Assisted in creating the testbenches for assignments and in evaluating the assignments. 
+		\item Mentored students in weekly lab sessions.
+	\end{itemize}
+	\item Teaching assistant - Digital systems and Lab \hfill \emph{January - May 2019} \\[\spsep]
+	\begin{itemize} \itemsep \isep
+		\item Coordinated weekly lab sessions and assisted students during these lab sessions. 
+		\item Evaluated lab assignments and exam papers.
+	\end{itemize}
+	
+	%\item Captain of Institute volleyball team during All India Inter NIT sports meet 2016-17 organized by NIT surathkal.
+	
+	%\item Mentor to NPTEL Course named Mapping signal Processing algorithms to DSP Architectures. \hfill \emph{(August-November 2019)}
+\end{itemize}
+
+%\resheading{\textbf{Co-Curricular Activities}}\\[\lsep]
+%\begin{itemize} \itemsep  \isep
+%\item Participated in Line following event at the national round of Indo-US robo League 2015 conducted by Technophilia systems and Robotics and Computer Applications Institute of USA, held at IIT bombay during Aavriti 2015 organized by EESA IIT Bombay, on 28th and 29th march 2015.
+%\item Accelero-Botix, A workshop conducted by technophilia systems in association with robotics and computer applications institute of USA held at national institute of technology Trichy on 27and 28 feb 2015.
+%\item Hand gesture controlled robotics workshop organized.
+% by Pragyan, The international techno- management festival of NIT tiruchirapalli held from 26 feb to 1 march 2015.
+%\item Arduinotics workshop conducted by DigimindIndia pvt ltd. at Tarang 14, the annual technical symposium of ece dept held at nit pducherry on 28 feb 2014.
+%\item Android application developement workshop conducted during knosys 14 on 31 jan 2014 at NIT puducherry.
+%\end{itemize}
+
+\resheading{\textbf{Extra Curricular Activities}}\\[\lsep]
+\setlength{\unitlength}{5cm}
+\put(0.11,-0.04){\line(1,0){3.6}}\\[-0.6cm]
+\begin{itemize} \itemsep  \isep
+	\item Achieved second position in Volleyball Tournament during schroeter 2018-19, held at IIT madras.\hfill\href{https://drive.google.com/open?id=19uP6IxXR3wwPUG8wbQ5eoRZMzrzxGdcJ}{proof}
+	\item Achieved second position in Chess competition in Annual Sports meet 2016-17, held at NIT Puducherry.\hfill\href{https://drive.google.com/open?id=1sGVwFJofSuaWO4MVtUEhqepG-2oBvz0E}{proof}
+	\item Participated and completed Sports for mental health run (5KM running competition) conducted by Shaastra Sports Tech Summit and Decathlon on October 28, 2018 in IIT Madras.\hfill\href{https://drive.google.com/open?id=13nEbXNnyFqvCc_U7oz4s8vLcd70hJyJO}{proof}
+%	
+%	\item Achieved first position in Freshie volleyball tournament during 2018-19 held at IIT Madras.
+%	\item Achieved First position in Carroms competition in Annual Sports meet 2016-17.
+%	
+%	\item Participated in Volleyball Tournament during All India Inter NIT sports meet 2016-17 organized by NIT surathkal.
+%	\item Achieved second position in Chess competition at the annual sports meet 2015 of NIT Puducherry.
+%	\item Achieved second position in Volleyball tournament at the annual sports meet 2015 of NIT Puducherry.
+%	\item Participated in Volleyball Tournament during All India Inter NIT sports meet 2013-14 organized by NIT Warangal.
+%	\item Achieved first position in Kabaddi competition held in connection with college day celebration for the year 2011-12 by Sri Vidya vikas junior college, chittoor.
+
+	
+\end{itemize}
+\end{document}
