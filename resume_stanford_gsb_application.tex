@@ -1,0 +1,132 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{times} % Font Package
+\usepackage[top=0.5in, bottom=0.5in, left=0.35in, right=0.65in]{geometry}
+\usepackage{graphicx} %Use of photos
+\usepackage{multicol}
+
+\usepackage{array}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc} % input encoding
+
+\usepackage{nopageno}
+
+\setlength{\tabcolsep}{0in}
+\newcommand{\isep}{-2 pt}
+\newcommand{\lsep}{-0.5cm}
+\newcommand{\psep}{-0.6cm}
+\newcommand{\spsep}{-0.75cm}
+
+\newcommand{\tfspace}{\hspace{4.5mm}}
+
+\newcommand{\resheading}[1]{{\large {\begin{minipage}{1\textwidth}{\uppercase{ \textbf{#1}}}\end{minipage}}}}
+
+\renewcommand{\labelitemii}{$\circ$}
+%\newcommand{\resheading}[1]{{\Large {\begin{minipage}{0.975\textwidth}{\scshape{\textbf{#1 \vphantom{p\^{E}}}}}\end{minipage}}}}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=cyan,
+    filecolor=magenta,      
+    urlcolor=blue,
+}
+
+
+\begin{document}
+
+%Personal Details and Institute logo
+\begin{minipage}{1\linewidth}
+\center
+\LARGE \uppercase {\textbf{K, Jithendra}}\\
+%\Large \uppercase{{RTL Design Engineer, Intel Corporation}}\\
+%\Large {IIT Madras, NIT Puducherry, Ex-Mphasis}\\
+\Large {+91 9489551597 | jithendra.kothakota@gmail.com}\\
+%\Large {\href{https://www.linkedin.com/in/kjithendra/}{https://www.linkedin.com/in/kjithendra/}}\\
+\end{minipage}\\\\
+
+\resheading{\textbf{Professional Experience}}\\[\lsep]
+\setlength{\unitlength}{5cm}
+\put(0.11,-0.04){\line(1,0){3.6}}\\[-0.6cm]
+\begin{itemize}
+	\item \textbf{Intel Corporation \hfill Bengaluru, India | Work from Home} \\
+	\emph{GPU RTL Design Engineer - Power Management \hfill February 2022 - Present} \\[\spsep]
+		\begin{itemize} \itemsep \isep
+			\item Implemented handling of dynamically allocating compute resources on a need basis, thereby reducing overall power consumption by the GPU, in the Power Management unit. Implemented it with \textbf{firmware override capability that can be used to fix unforeseen bugs} found after manufacturing the GPU.
+			\item Implemented the infrastructure necessary to generate multiple Power management Units(PMUs) with all or fewer features from a common PMU that contains all features. With this, the generation and deletion of a new PMU is \textbf{much faster and just few steps away}. This is \textbf{included in the latest project to bring the GPU products into the market at a faster pace}.
+			
+%			\item Implemented Punit Parameterization: the infrastructure necessary to generate multiple power management Units(PMUs), each with its own set of features, from a common PMU repository that contains all features. With this, any number of PMUs, each with a subset of features from that of the common PMU can be \textbf{generated simply by passing the input file}, with sets of needed features for all PMUs, to the Design flow tools. Everything is \textbf{automated to significantly reduce overall time} for generation or deletion of PMUs. Punit Parameterization is \textbf{being used in the latest project to bring the products into the market at much faster pace}.
+			\item Within the team, initiated taking two 15-minute work-pace breaks to play foosball, one in the morning and another in the afternoon, \textbf{to refresh and recharge}, and to \textbf{improve the relationships among team members}. This is consistently being followed for the last 7 months.
+			%\item Owned PM Unit's Dispatcher module that sequences and sends power related work points to various domains and partitions in the GPU. Implemented DVFS handling with firmware override capability for post silicon fixes of unseen bugs. Fixed bugs and supported validation team till the Tape in.
+			%\item Implemented Parameterization in the PM Unit repository to make it a central repository from which multiple PM units, with different features, can be generated. Made necessary changes required in the RTL design flow, collaborated with Tools and flows team to make the necessary changes in the tools used. Demonstrated POC of it, made the incremental changes based on the feedback received. Introduced it in the latest project to speed up the design time-line of the project.%Implemented a central repository for the PM Unit git repository from which multiple PM Units can be generated.
+			%\item Excellent team member who constantly questions the approach, provides constructive feedback to team members, keeps the workspace active and energetic with active interactions and fun events. Actively grows professional network and improves interpersonal skills.
+		\end{itemize}
+
+	\item \textbf{Intel Corporation \hfill Bengaluru, India | Work from Home} \\
+	\emph{GPU Architect - Power Management \hfill July 2020 - February 2022} \\[\spsep]
+		\begin{itemize} \itemsep \isep
+			% Write the important points with quantitative results.
+			\item Created High level Architecture specification(HAS) for Arbitration logic between two Controllers, namely Xtensa Micro controller and TAP, such that the requests from the Xtensa micro controller are prioritized \textbf{to maximize overall performance of the system}.
+			% \item Created HAS for SVID(Serial voltage ID) protocol related power management that is used by the firmware team to transition its source code base from Foxton assembly code to C++.
+			\item Automated various tasks needed for debugging the memory hardware and \textbf{reduced the overall time to do so by approximately 10 times.}
+			% \item Automated various stages of HBM Emulation runs in Data center GPU like preprocessing input files, launching emulation runs for various tests at once in parallel, generating the statistics such as bandwidth, latency and transactions by running the corresponding scripts, and generating summaries of the finished emulation runs into spreadsheets. Reduced corresponding time required to do these tasks by  approximately 10 times. Debugged and helped to improve HBM performance by running various scenarios of work loads.		
+			% \item Modelled Adaptive clock modulation and Proportional-Integral-Derivative(PID) controller loop in python which can be used to find the best parameters that generate optimal performance.
+		\end{itemize}
+
+	\item \textbf{Mphasis Pvt. Ltd  \hfill Chennai, India | Mangaluru, India} \\
+	\emph{Associate Software Engineer \hfill July 2018 - July 2019} \\[\spsep]
+		\begin{itemize} \itemsep \isep
+		\item Researched and proposed solutions to the identified software vulnerabilities in Centive, an Incentive Application. These are \textbf{accepted by the upper management for implementation}.
+		\item Developed an Internet banking website with basic functionalities, as part of the software development training, within 3 days time, with \textbf{proper planning and team coordination}, and demonstrated it 
+		% \item Worked as a team member in a project to fix vulnerabilities present in Centive, an Incentive Application based on Java Applets.
+		% \item Researched and proposed solutions to the vulnerabilities present in Centive, an incentive application based on Java applets. These proposals are accepted for implementation. Did set up the development environment as it was developed on old software stack based on Java applets.
+		% \item Made regular interactions with the team members and with the topic experts from USA branch to clear the roadblocks and finish setting up the development environment.
+%		\item Proposed solutions were accepted by the higher members of the team and the development environment was set up.
+		% \item Developed a bank web application that can be used by bank employees to carryout transactions \& process customer needs and by customers to use internet banking facilities, as a part of full stack web development training in Java programming language.
+		\end{itemize}
+\end{itemize}
+
+%\pagebreak
+\resheading{\textbf{Education} }\\[\lsep]
+\setlength{\unitlength}{5cm}
+\put(0.11,-0.04){\line(1,0){3.6}}\\[-0.6cm]
+\begin{table}[h!]
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{llll}
+%\setlength{\unitlength}{5cm}
+%\put(0.11,0.1){\line(1,0){3.6}}\\[-0.6cm] 
+\tfspace\textbf{Program} & \textbf{Institution Name} & \textbf{CGPA | Marks}           & \textbf{Completion Year}  \\ 
+\setlength{\unitlength}{5cm}
+\put(0.11,0.1){\line(1,0){3.6}}\\[-0.45cm] 
+\tfspace Master of Technology  & Indian Institute of Technology, Madras  & 8.85/10 & 2020 \\\\[-0.4cm]
+\tfspace Bachelor of Technology & National Institute of Technology, Puducherry & 8.64/10 & 2017\hfill \\\\[-0.4cm]
+\tfspace Higher Secondary(Class 11 \&12) & Sri Vidya Vikas Junior College, Chittoor & 977/1000 & 2013\hfill \\\\[-0.4cm]
+\tfspace Secondary(Class 9 \& 10) & Jawahar Navodaya Vidyalaya, Chittoor & 8.4/10 & 2011\hfill \\\\ [-0.4cm]
+\setlength{\unitlength}{5cm}
+\put(0.11,0.1){\line(1,0){3.6}}\\[-0.75cm]
+\end{tabular}
+\end{table}
+
+\resheading{\textbf{Key Project(s)} }\\[\lsep]
+\setlength{\unitlength}{5cm}
+\put(0.11,-0.04){\line(1,0){3.6}}\\[-0.6cm]
+\begin{itemize}
+
+	\item \textbf{Referrals \hfill July 2021 - October 2022} \\
+	\emph {Refer prospective job seekers to job openings at Intel, use Professional media platforms to spread the information about Intel job openings, and automate most of the repetitive tasks using programming languages.} \\[\spsep]
+	%\emph{Personal  \hfill Python, Selenium, Professional Networking, Digital outreach skills} \\[\spsep]
+	\begin{itemize} \itemsep \isep
+		\item \textbf{Helped 53 job aspirants} to get a job at Intel, and thereby to advance in their careers.
+		\item \textbf{Made over 1,300,000 impressions} on the posts related to Intel job openings through LinkedIn.
+		\item Increased the number of followers of my LinkedIn page by \textbf{about 23 times}, from 250 to about 5730. 
+		% \item Generated 1.5 times of my annual salary with 2.5\% of efforts.
+		\item Automated most of the repetitive tasks and thereby reduced the weekly recurring work time \textbf{significantly by about 12 times}(from about 12 hours to an about 1 hour). %in the free time during the first 2 weeks of the project, there by making the main core work to be done seamless.
+		\item Generated about \textbf{1.5 times of my annual salary from full time job} with about \textbf{3\% of efforts}.
+		% \item Increased my Professional network followers by 23 times for wider reach of
+		% \item Increased number of views by 
+		% \item Digital Marketing, Search Engine Optimization
+	\end{itemize}
+\end{itemize}
+\
+\end{document}
