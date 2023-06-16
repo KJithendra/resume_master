@@ -37,28 +37,61 @@
 \begin{document}
 
 %Personal Details and Institute logo
-\begin{minipage}{0.70\linewidth}
-\LARGE \uppercase {\textbf{K Jithendra}}\\
-\Large \uppercase{{RTL Design Engineer, Intel Corporation}}\\\\
-\Large {IIT Madras, NIT Puducherry, Ex-Mphasis}\\
-\Large {+91 9489551597 | jithendra.kothakota@gmail.com}\\
-\Large {\href{https://www.linkedin.com/in/kjithendra/}{https://www.linkedin.com/in/kjithendra/}}\\
-\end{minipage}
-\begin{minipage}{0.27\linewidth}
-\hfill
-\frame{\includegraphics[width=30mm]{jithendra_k.png}}
-\end{minipage}\\
+\begin{center}
+\LARGE { \uppercase {\textbf{K Jithendra}}}\\
+\Large {RTL Design Engineer at Intel, IIT Madras, NIT Puducherry, Ex-Mphasis}\\
+\large {+91 9489551597 | jithendra.kothakota@gmail.com | \href{https://www.linkedin.com/in/kjithendra/}{https://www.linkedin.com/in/kjithendra/}} \\
+\end{center}
+
+
+%\begin{minipage}{0.5\linewidth}
+%\Large {RTL Design Engineer at Intel}\\
+%\Large {IIT Madras, NIT Puducherry, Ex-Mphasis}\\
+%\end{minipage}
+%\begin{minipage}{0.5\linewidth}
+%%\\
+%\Large {+91 9489551597}\\
+%\Large {jithendra.kothakota@gmail.com}\\
+%\Large {\href{https://www.linkedin.com/in/kjithendra/}{https://www.linkedin.com/in/kjithendra/}}\\
+%% \frame{\includegraphics[width=30mm]{jithendra_k.png}}
+%\end{minipage}\\
+
+%\begin{minipage}{0.70\linewidth}
+%\LARGE \uppercase {\textbf{K Jithendra}}\\
+%\Large \uppercase{{RTL Design Engineer, Intel Corporation}}\\\\
+%\Large {IIT Madras, NIT Puducherry, Ex-Mphasis}\\
+%\Large {+91 9489551597 | jithendra.kothakota@gmail.com}\\
+%\Large {\href{https://www.linkedin.com/in/kjithendra/}{https://www.linkedin.com/in/kjithendra/}}\\
+%\end{minipage}
+%\begin{minipage}{0.27\linewidth}
+%\hfill
+%\frame{\includegraphics[width=30mm]{jithendra_k.png}}
+%\end{minipage}\\
 
 \resheading{\textbf{Professional Experience(4 years)}}\\[\lsep]
 \setlength{\unitlength}{5cm}
 \put(0.11,-0.04){\line(1,0){3.6}}\\[-0.6cm]
 \begin{itemize}
 	\item \textbf{RTL Design Engineer at Intel Corporation(Power Management(PM) Unit) \hfill February 2022 - Present} \\
-	\emph{Synopsis VCS MX, Verdi, SpyGlass for Lint, CDC and RDC  \hfill Verilog, System Verilog, Perl, Make files, Tcsh scripting, Git} \\[\spsep]
+	\emph{Synopsis VCS MX, Verdi, SpyGlass for Lint, CDC and RDC  \hfill Verilog, System Verilog, Perl, Make files, \hspace*{112mm} Tcsh scripting, Git} \\[\spsep]
 		\begin{itemize} \itemsep \isep
-			\item Owned PM Unit's Dispatcher module that sequences and sends power related work points to various domains and partitions in the GPU. Implemented DVFS handling with firmware override capability. Fixed bugs and supported validation team throughout the project life cycle.
-			\item Implemented Modular IP driver in Dispatcher which makes the addition or removal of an IP easy and the system to be more modular. This make the work point actions by various IPs more parallel and independent.
-			\item Implemented Parameterization in the PM Unit repository to make it a central repository from which multiple PM units, with different features, can be generated. Made necessary changes required in the RTL design flow, collaborated with Tools and Flows team to make the necessary changes in the tools used. Demonstrated POC of it, made the incremental changes based on the feedback received. Introduced it in the latest project to speed up the design time-line of the project.%Implemented a central repository for the PM Unit git repository from which multiple PM Units can be generated.
+			\item Ownership of Dispatcher controller: Sequence and send power related work points to various IPs present in the GPU.
+				\begin{itemize} \itemsep \isep
+					\item Implemented Dispatcher FSM that sends work points to IP driver sequencers parallelly and with standardized commands so that the power management actions on the IPs are made more modular. 
+					\item Implemented unit level tests for this design to check basic functional correctness.
+					\item Implemented DVFS workpoint handling in Dispatcher along with firmware override capability. 
+					\item Fixed identified bugs and supported validation team throughout the project life cycle.
+					\item Analyzed equivalence checks for a functional improvement in the dispatcher module to decide whether to proceed with ECO (Engineering change Order). 
+				\end{itemize}
+			% \item Owned PM Unit's Dispatcher module that sequences and sends power related work points to various domains and partitions in the GPU. Implemented DVFS handling with firmware override capability. Fixed bugs and supported validation team throughout the project life cycle.
+			% \item Implemented Modular IP driver in Dispatcher which makes the addition or removal of an IP easy and the system to be more modular. This make the work point actions by various IPs more parallel and independent.
+			\item Parameterization of features in PM Unit: Addition or Removal of a feature from the IP with a parameter value.
+			\begin{itemize} \itemsep \isep
+				\item Updated necessary changes in the design flow. Collaborated with Tools and Flows team to make the necessary changes in the used tools and its configurations.
+				\item Demonstrated POC by generating two different PM Units that have differences in their features.
+				\item Included it in the latest project to speed up the design timeline of the project.
+			\end{itemize}
+			% \item Implemented Parameterization in the PM Unit repository to make it a central repository from which multiple PM units, with different features, can be generated. Made necessary changes required in the RTL design flow, collaborated with Tools and Flows team to make the necessary changes in the tools used. Demonstrated POC of it, made the incremental changes based on the feedback received. Introduced it in the latest project to speed up the design time-line of the project.%Implemented a central repository for the PM Unit git repository from which multiple PM Units can be generated.
 			% \item Excellent team member who constantly questions the approach, provides constructive feedback to team members, keeps the workspace active and energetic with active interactions and fun events. Actively grows professional network and improves interpersonal skills.
 		\end{itemize}
 
@@ -68,7 +101,13 @@
 			% Write the important points with quantitative results.
 			\item Created High level Architecture specification(HAS) for Arbitration logic between Xtensa Micro controller and TAP logic such that the requests from the micro controller are prioritized to maximize overall performance of the micro controller.
 			\item Created HAS for SVID(Serial voltage ID) protocol related power management that is used by the firmware team to transition its source code base from Foxton assembly code to C++.
-			\item Automated various stages of HBM Emulation runs in Data center GPU like preprocessing input files, launching emulation runs for various tests at once in parallel, generating the statistics such as bandwidth, latency and transactions by running the corresponding scripts, and generating summaries of the finished emulation runs into spreadsheets. Reduced corresponding time required to do these tasks by  approximately 10 times. Debugged and helped to improve HBM performance by running various scenarios of work loads.		
+			\item HBM debug in Data center GPU debug
+				\begin{itemize} \itemsep \isep
+					\item Automated various stages of HBM emulation runs like preprocessing input files, launching emulation runs for various tests in parallel, generating the statistics such as bandwidth, latency and transactions, and generating spreadsheets with summary of the finished emulation runs.
+					\item Reduced time required to do the above tasks by approximately 10 times.
+					\item Ran various scenarios of the workloads and generated the summary for these runs.
+				\end{itemize}
+			% \item Automated various stages of HBM Emulation runs in Data center GPU like preprocessing input files, launching emulation runs for various tests at once in parallel, generating the statistics such as bandwidth, latency and transactions by running the corresponding scripts, and generating summaries of the finished emulation runs into spreadsheets. Reduced corresponding time required to do these tasks by  approximately 10 times. Debugged and helped to improve HBM performance by running various scenarios of work loads.		
 			\item Modelled Adaptive clock modulation and Proportional-Integral-Derivative(PID) controller loop in python which can be used to find the best parameters that generate optimal performance.
 		\end{itemize}
 	
@@ -77,9 +116,12 @@
 	% \emph{Indigenous 5G Testbed is } \\[\spsep]
 	\begin{itemize} \itemsep \isep
 		% \item Design and implementation of 5G technologies for wireless systems and networks on integrated multi-core programmable SoCs for maximal performance. 
-		\item Designed and Implemented Channel Decoder module for the Uplink Receiver on Xilinx Zynq UltraScale+ RFSoC.
-	\item worked on end to end VLSI design flow for Channel Decoder module like module design using HLS, verification by writing testbenches, synthesis, place and route, and testing on the Xilinx Zync FPGA.
-	\item Integrated this module into the Uplink Receiver and supported the integration team during the up-revisions of the receiver.
+		\item Designed and tested Channel Decoder module for the Uplink Receiver of 5G NR on Xilinx Zynq UltraScale+ RFSoC.
+		\item Worked on end to end design flow that includes design using Vivado HLS(High Level Synthesis), Verification using verilog testbenches, synthesis, place and route, and programming FPGA in Xilinx Vivado tool. 
+		\item Integrated Channel decoder into Uplink Receiver and tested the integrated design for functional correctness.
+		\item Supported integration team during up-revisions of the receiver.
+	% \item worked on end to end VLSI design flow for Channel Decoder module like module design using HLS, verification by writing testbenches, synthesis, place and route, and testing on the Xilinx Zync FPGA.
+	% \item Integrated this module into the Uplink Receiver and supported the integration team during the up-revisions of the receiver.
 	\end{itemize}
 
 %% Block comment %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -232,11 +274,11 @@
 \setlength{\unitlength}{5cm}
 \put(0.11,-0.04){\line(1,0){3.6}}\\[-0.6cm]
 \begin{itemize} \itemsep \isep
-  \item \textbf{HDL}\hspace{33mm}: Verilog, System Verilog. \\[-0.55cm].
-  \item \textbf{Programming languages} : Python, Perl(intermediate), tcsh scripting, Java(intermediate), Multi Markdown, C,\\
-  \hspace*{43mm} C++\\[-0.55cm]%, TCL(novice). 
-  \item \textbf{Software packages}\hspace{11mm}: Synopsys Verdi, VCS MX, Spyglass, Git, Vivado, Vivado HLS,  LTSpice, Electric,\\
-  \hspace*{43mm} Eclipse, MATLAB, Pytorch, Jira%, Cachegrind, CACTI, Ramulator(novice).
+  \item \textbf{HDL}\hspace{33mm}: Verilog, System Verilog, Vivado HLS (High Level Synthesis). \\[-0.55cm].
+  \item \textbf{Programming languages} : Python, Perl(intermediate), tcsh scripting, Multi Markdown, C, C++, TCL(novice)\\[-0.55cm]
+  % \hspace*{43mm} , Java(intermediate)\\[-0.55cm]%, TCL(novice). 
+  \item \textbf{Software packages}\hspace{11mm}: Synopsys Verdi, VCS MX, Spyglass, Git, Jira, Vivado, Vivado HLS,  LTSpice, \\
+  \hspace*{44mm}Electric, Eclipse, MATLAB, Pytorch%, Cachegrind, CACTI, Ramulator(novice).
 \end{itemize}
 
 %% Block comment %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -291,7 +333,7 @@
 \setlength{\unitlength}{5cm}
 \put(0.11,-0.04){\line(1,0){3.6}}\\[-0.6cm]
 \begin{itemize} \itemsep  \isep
-	\item Teaching assistant - Mapping signal processing algorithms to architectures \hfill \emph{August 2019 - June 2020} \\[\spsep]
+	\item Teaching assistant - Mapping signal processing algorithms to architectures course\hfill \emph{August 2019 - June 2020} \\[\spsep]
 	\begin{itemize} \itemsep \isep
 		\item Prepared verilog testbenches and  multiple choice questions for assignments. 
 		\item Organized quiz sessions and evaluated assignment submissions and its demonstrations by the students.
